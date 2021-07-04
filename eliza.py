@@ -1,4 +1,3 @@
-
 import pyttsx3
 import speech_recognition as sr
 import wikipedia
@@ -19,10 +18,10 @@ def speak(audio):
 def wishMe():
     hour = int(datetime.datetime.now().hour)
     if hour>=0 and hour<12:
-        speak("supp bruh")
+        speak("Hello Sir how are you feeling today")
     else:
-        speak("wassup nigga")
-        speak("speak up bitch")
+        speak("Good evening")
+        speak("had coffee?")
 
 def takecommand():
     r = sr.Recognizer()
@@ -70,27 +69,16 @@ if __name__ == "__main__":
         elif 'open code ' in query:
             codePath = 'A:\\vs code\\Microsoft vs code\\Code.exe'
             os.startfile(codePath)
-
             
         elif 'digam digam' in query:
            speak("chik chik")
-
-        elif 'aur bata lodu' in query:
-           speak("tu bata lode")
            
         elif 'wasup' in query:
-           speak("nothing much baby")
+           speak("nothing much ")
            
         elif 'open pornhub' in query:
-           speak("banned bruh")
-           
-        elif 'teri man ki' in query:
-           speak("aankh")
-           
- 
-        elif 'ki ki' in query:
-           speak("do you love me?")
-           
+           speak("It's banned here bruh")
+         
         elif 'hello' in query:
            speak("hi how are you!")
 
