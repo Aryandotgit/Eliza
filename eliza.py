@@ -69,15 +69,9 @@ if __name__ == "__main__":
         elif 'open code ' in query:
             codePath = 'A:\\vs code\\Microsoft vs code\\Code.exe'
             os.startfile(codePath)
-            
-        elif 'digam digam' in query:
-           speak("chik chik")
            
         elif 'wasup' in query:
            speak("nothing much ")
-           
-        elif 'open pornhub' in query:
-           speak("It's banned here bruh")
          
         elif 'hello' in query:
            speak("hi how are you!")
